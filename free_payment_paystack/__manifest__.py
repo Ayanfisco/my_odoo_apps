@@ -18,7 +18,6 @@
     * Webhook support for real-time payment notifications
     """,
     'author': 'Tech Joe',
-    'website': 'Ayanfiscoss@gmail.com',
     'depends': ['payment'],
     'data': [
         'views/payment_paystack_templates.xml',
