@@ -40,10 +40,7 @@ Perfect for small to medium businesses looking to streamline their accounts rece
         'views/account_move_views.xml',
     ],
     'images': [
-        'static/description/icon.svg',
-        'static/description/screenshot_1.png',
-        'static/description/screenshot_2.png',
-        'static/description/screenshot_3.png',
+        'static/description/banner.png',
     ],
     'installable': True,
     'application': False,
