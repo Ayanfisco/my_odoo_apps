@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Form View -->
+    <record id="view_invoice_reminder_settings_form" model="ir.ui.view">
+        <field name="name">invoice.reminder.settings.form</field>
+        <field name="model">invoice.reminder.settings</field>
+        <field name="arch" type="xml">
+            <form string="Payment Reminder Settings">
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button name="toggle_active" type="object" class="oe_stat_button" icon="fa-archive">
+                            <field name="active" widget="boolean_button" options='{"terminology": "active"}'/>
+                        </button>
+                    </div>
+                    <group>
+                        <group string="General Settings">
+                            <field name="company_id" groups="base.group_multi_company"/>
+                            <field name="send_email"/>
+                            <field name="email_from" placeholder="Leave empty to use company email"/>
+                        </group>
+                        <group string="Reminder Schedule">
+                            <field name="first_reminder_days"/>
+                            <field name="second_reminder_days"/>
+                            <field name="final_reminder_days"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Information">
+                            <group>
+                                <group>
+                                    <p>Configure when payment reminders should be sent for overdue invoices.</p>
+                                    <p><strong>First Reminder:</strong> Friendly reminder sent after the specified days overdue.</p>
+                                    <p><strong>Second Reminder:</strong> More urgent reminder for continued non-payment.</p>
+                                    <p><strong>Final Reminder:</strong> Final notice before potential service suspension.</p>
+                                </group>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- List View -->
+    <record id="view_invoice_reminder_settings_list" model="ir.ui.view">
+        <field name="name">invoice.reminder.settings.list</field>
+        <field name="model">invoice.reminder.settings</field>
+        <field name="arch" type="xml">
+            <list string="Payment Reminder Settings">
+                <field name="company_id" groups="base.group_multi_company"/>
+                <field name="active"/>
+                <field name="first_reminder_days"/>
+                <field name="second_reminder_days"/>
+                <field name="final_reminder_days"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- Action -->
+    <record id="action_invoice_reminder_settings" model="ir.actions.act_window">
+        <field name="name">Payment Reminder Settings</field>
+        <field name="res_model">invoice.reminder.settings</field>
+        <field name="view_mode">list,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Configure Payment Reminder Settings
+            </p>
+            <p>
+                Set up automated payment reminders for overdue invoices.
+            </p>
+        </field>
+    </record>
+
+    <!-- Menu Item -->
+    <menuitem id="menu_invoice_reminder_settings"
+              name="Payment Reminder Settings"
+              parent="account.menu_finance_configuration"
+              action="action_invoice_reminder_settings"
+              sequence="100"/>
+
+</odoo>
