@@ -31,8 +31,6 @@ Perfect for small to medium businesses looking to streamline their accounts rece
     """,
     'author': 'Tech Joe',
     'license': 'OPL-1',
-    'price': 49.00,
-    'currency': 'USD',
     'depends': ['account', 'mail'],
     'data': [
         'security/ir.model.access.csv',
@@ -42,7 +40,7 @@ Perfect for small to medium businesses looking to streamline their accounts rece
         'views/account_move_views.xml',
     ],
     'images': [
-        'static/description/icon.png',
+        'static/description/icon.svg',
         'static/description/screenshot_1.png',
         'static/description/screenshot_2.png',
         'static/description/screenshot_3.png',
