@@ -6,7 +6,7 @@ from odoo import _, api, fields, models
 from odoo.exceptions import ValidationError
 
 from odoo.addons.payment import utils as payment_utils
-from odoo.addons.payment_paystack import const
+from odoo.addons.free_payment_paystack import const
 
 _logger = logging.getLogger(__name__)
 

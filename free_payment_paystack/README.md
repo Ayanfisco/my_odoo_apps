@@ -1,7 +1,7 @@
 # Paystack Payment Provider for Odoo
 
 [![Paystack](https://img.shields.io/badge/Paystack-Certified-brightgreen.svg)](https://paystack.com/)
-[![Odoo Version](https://img.shields.io/badge/Odoo-18.0-blue.svg)](https://www.odoo.com/)
+[![Odoo Version](https://img.shields.io/badge/Odoo-19.0-blue.svg)](https://www.odoo.com/)
 [![License: OPL-3](https://img.shields.io/badge/license-OPL--3-blue.svg)](https://www.odoo.com/documentation/user/14.0/legal/licenses/licenses.html#odoo-apps)
 
 ## Overview

@@ -1,10 +1,10 @@
 {
     'name': 'Free Paystack Payment Provider',
-    'version': '18.0.1.0.0',
+    'version': '19.0.1.0.0',
     'category': 'Accounting/Payment Providers',
     'summary': 'Payment Provider: Paystack Implementation for African Markets',
     'description': """
-    Paystack Payment Provider for Odoo 18
+    Paystack Payment Provider for Odoo 19
     =====================================
     Accept payments via Paystack - Africa's leading payment gateway
 
@@ -24,11 +24,6 @@
         'views/payment_provider_views.xml',
         'data/payment_provider_data.xml',
     ],
-    'assets': {
-        'web.assets_frontend': [
-            'payment_paystack/static/src/js/**/*',
-        ],
-    },
     'images': ['static/description/icon.png'],
     'installable': True,
     'application': False,

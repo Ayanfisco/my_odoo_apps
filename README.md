@@ -1,1 +1,1 @@
-# my_odoo_apps
+# workspace_v19
