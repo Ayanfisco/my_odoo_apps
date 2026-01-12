@@ -2,7 +2,7 @@
     'name': 'Fun Fact Fetcher',
     'version': '18.0.0.1.0',
     'category': 'Tools',
-    'summary': 'Learn to call external APIs',
+    'summary': 'Fact Fetcher. Fetch fun facts online',
     'depends': ['base'],
     'author': 'Tech Joe',
     'data': [
