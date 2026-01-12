@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_my_api_integration_user,access.my.api.integration.user,model_fact_fetcher,base.group_user,1,1,1,1

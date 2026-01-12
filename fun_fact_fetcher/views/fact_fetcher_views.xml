@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Form View -->
+    <record id="view_fact_fetcher_form" model="ir.ui.view">
+        <field name="name">fact.fetcher.form</field>
+        <field name="model">fact.fetcher</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="fetch_random_fact"
+                            string="Fetch Random Fact"
+                            type="object"
+                            class="btn-primary"/>
+                </header>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="fetch_date"/>
+                        <field name="fact_text"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Action -->
+    <record id="action_fact_fetcher" model="ir.actions.act_window">
+        <field name="name">Random Facts</field>
+        <field name="res_model">fact.fetcher</field>
+        <field name="view_mode">list,form</field>
+    </record>
+    <menuitem id="menu_fact_fetcher_root"
+              name="Fact Fetcher"/>
+
+    <menuitem id="menu_fact_fetcher"
+              name="Random Facts"
+              parent="menu_fact_fetcher_root"
+              action="action_fact_fetcher"/>
+</odoo>
