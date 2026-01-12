@@ -4,6 +4,7 @@
     'category': 'Tools',
     'summary': 'Learn to call external APIs',
     'depends': ['base'],
+    'author': 'Tech Joe',
     'data': [
         'security/ir.model.access.csv',
         'views/fact_fetcher_views.xml',
