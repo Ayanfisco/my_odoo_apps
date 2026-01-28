@@ -1,5 +1,5 @@
 {
-    'name': 'EduCore Management System',
+    'name': 'School Management System',
     'version': '18.0.1.0.0',
     'category': 'Education',
     'summary': 'Complete School Management System for Odoo 18',
