@@ -38,6 +38,8 @@
         'views/menu_views.xml',
     ],
     'images': ['static/description/icon.png'],
+    'price': 150,
+    'currency': 'USD',
     'installable': True,
     'application': True,
     'auto_install': False,
