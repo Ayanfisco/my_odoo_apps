@@ -12,7 +12,7 @@
     'images': ['static/description/icon.png'],
     'installable': True,
     'application': True,
-    'price': 14.00,
+    'price': 1.00,
     'currency': 'usd',
     'license': 'LGPL-3',
 }
